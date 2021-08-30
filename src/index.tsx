@@ -1,9 +1,5 @@
-import { NativeModules } from 'react-native';
+declare function multiply(a: number, b: number): number;
 
-type JsiExampleType = {
-  multiply(a: number, b: number): Promise<number>;
-};
-
-const { JsiExample } = NativeModules;
-
-export default JsiExample as JsiExampleType;
+export function multiplyA(): number {
+  return multiply(2, 2);
+}
