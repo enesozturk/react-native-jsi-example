@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
-import { multiplyA } from 'react-native-jsi-example';
+import { getMeaningOfLife } from 'react-native-jsi-example';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   const handleGetResult = React.useCallback(() => {
-    setResult(multiplyA());
+    setResult(getMeaningOfLife());
   }, []);
 
   return (
